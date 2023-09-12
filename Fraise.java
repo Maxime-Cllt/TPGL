@@ -1,5 +1,13 @@
 public class Fraise {
 
+    public Fraise(double prix, String origine) {
+        if (prix < 0) this.prix = -prix;
+        else this.prix = prix;
+
+        if (origine.isEmpty()) this.origine = null;
+        else this.origine = origine;
+    }
+
     private double prix;
     private String origine;
 
@@ -8,12 +16,14 @@ public class Fraise {
         this.origine = null;
     }
 
-    public Fraise(double prix, String origine) {
-        if (prix < 0) this.prix = -prix;
-        else this.prix = prix;
-
-        if (origine.equals("")) this.origine = null;
-        else this.origine = origine;
+    public static void main(String[] args) {
+        Fraise f1 = new Fraise();
+        Fraise f2 = new Fraise(0.80, "France");
+        System.out.println(f1);
+        System.out.println(f2);
+        System.out.println(f1.equals(f2));
+        System.out.println(f1.isSeedless());
+        System.out.println(f2.isSeedless());
     }
 
     public double getPrix() {
@@ -34,7 +44,11 @@ public class Fraise {
 
     @Override
     public String toString() {
-        return "Fraise de " + origine + " a " + prix + " euros";
+        return "Fraise de " + origine + " à " + prix + " euros";
+    }
+
+    public boolean isSeedless() {
+        return true;
     }
 
     @Override

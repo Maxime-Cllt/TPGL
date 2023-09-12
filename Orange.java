@@ -5,8 +5,6 @@ public class Orange {
 
     public static void main(String[] args) {
 
-        System.out.println("Hello World!");
-
         Orange o1 = new Orange();
         Orange o2 = new Orange(0.80, "France");
         System.out.println(o1);
@@ -51,7 +49,7 @@ public class Orange {
 
     @Override
     public String toString() {
-        return "Orange de " + origine + " a " + prix + " euros";
+        return "Orange de " + origine + " à " + prix + " euros";
     }
 
     @Override
