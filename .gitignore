@@ -1,4 +1,21 @@
-/Orange.class
 .DS_Store
 /.idea/
-/out/
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Package Files #
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+*.iml
