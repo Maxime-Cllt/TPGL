@@ -9,12 +9,12 @@ public class Orange {
 
         Orange o1 = new Orange();
         Orange o2 = new Orange(0.80, "France");
-        System.out.println(o1.toString());
-        System.out.println(o2.toString());
+        System.out.println(o1);
+        System.out.println(o2);
         System.out.println(o1.equals(o2));
         System.out.println(o1.isSeedless());
         System.out.println(o2.isSeedless());
-        
+
     }
 
     private double prix;
